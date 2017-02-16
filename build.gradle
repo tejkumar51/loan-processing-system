@@ -9,6 +9,9 @@
 
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -45,6 +48,14 @@ compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.8.10'
 
 // https://mvnrepository.com/artifact/org.springframework/spring-aop
 compile group: 'org.springframework', name: 'spring-aop', version: '4.3.6.RELEASE'
+
+// https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.6.RELEASE'
+
+providedCompile 'javax.servlet:servlet-api:2.5' 
+runtime 'javax.servlet:jstl:1.2'
+
+
 
 
 

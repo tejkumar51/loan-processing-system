@@ -36,7 +36,7 @@ public class UserDAOImpl implements UserDAO {
 
 		jdbcTemplate.update(addUserCommand, new Object[] { user.getUserId(), user.getUserName(), user.getPassword(),
 				user.getEmail(), user.getMobile(), user.getUserType() });
-		int i = 10 / 0;
+		//int i = 10 / 0;
 
 	}
 
